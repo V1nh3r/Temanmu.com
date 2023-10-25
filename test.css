@@ -1,0 +1,562 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-brenda {
+    overflow-x: hidden;
+  }
+  
+  .home-brenda {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+    }
+    
+    .home-brenda .div {
+      background-color: #ffffff;
+      width: 100%; 
+      height: auto; 
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .home-brenda .landing-page {
+      position: absolute;
+      width: 100%;
+      height: 1000px;
+      top: 0;
+      left: 0;
+      background-color: #f8f8f8;
+    }
+    
+    .home-brenda .overlap-group {
+      position: relative;
+      height: 1000px;
+      width: 100%;
+      display: grid;
+    }
+    
+    .home-brenda .ellipse {
+      position: absolute;
+      width: 100%;
+      height: 625px;
+      top: 375px;
+      left: 520px;
+    }
+    
+    .home-brenda .ellipse2 {
+      position: absolute;
+      width: 100%;
+      height: 774px;
+      top: 0;
+      left: 0;
+    }
+    
+    .home-brenda .header {
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      border-top-style: none;
+      border-right-style: none;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-left-style: none;
+      border-color: #000000;
+    }
+    
+    .home-brenda .text-wrapper {
+      position: absolute;
+      top: 27px;
+      left: 71px;
+      font-family: "Poppins-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 2em;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .home-brenda .frame {
+      position: absolute;
+      width: 670px;
+      height: 94px;
+      top: 2px;
+      left: 706px;
+    }
+    
+    .home-brenda .frame-2 {
+      display: flex;
+      width: 616px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px 10px 10px;
+      position: absolute;
+      top: 10px;
+      left: -100px;
+    }
+    
+    .home-brenda .button-text {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 20px;
+      position: relative;
+      flex: 0 0 auto;
+      margin-left: -7.5px;
+    }
+    
+    .home-brenda .button-text-2 {
+      font-family: "Poppins-SemiBold", Helvetica;
+      font-weight: 600;
+      position: relative;
+      width: fit-content;
+      margin-top: -1px;
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .home-brenda .button-text-wrapper {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 9%;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .home-brenda .div-wrapper {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 20px;
+      position: relative;
+      flex: 0 0 auto;
+      margin-right: -7.5px;
+    }
+    
+    .home-brenda .icon-profile-wrapper {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 25px 0px;
+      position: absolute;
+      top: 10px;
+      left: 636px;
+    }
+    
+    .home-brenda .icon-profile {
+      position: relative;
+      width: 24px;
+      height: 24px;
+    }
+    
+    .home-brenda .frame-3 {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 8px 16px;
+      position: absolute;
+      top: 511px;
+      left: 200px;
+    }
+    
+    .home-brenda .p {
+      position: relative;
+      width: fit-content;
+      margin-top: -1px;
+      font-family: "Poppins-SemiBold", Helvetica;
+      font-weight: 600;
+      color: #000000;
+      font-size: 31px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .home-brenda .heading-wrapper {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 8px 90px;
+      position: absolute;
+      top: 373px;
+      left: 248px;
+    }
+    
+    .home-brenda .heading {
+      position: relative;
+      width: 913px;
+      height: 102px;
+    }
+    
+    .home-brenda .heading-2 {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      font-family: "Poppins-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 68px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .home-brenda .primary-button-l {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 24px;
+      padding: 12px 24px;
+      position: absolute;
+      top: 658px;
+      left: 641px;
+    }
+    
+    .home-brenda .primary-button-l-wrapper {
+      display: inline-flex;
+      align-items: flex-start;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .home-brenda .primary-button-l-2 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      position: relative;
+      flex: 0 0 auto;
+      background-color: #8da1d3;
+      border-radius: 4px;
+    } 
+    
+    .home-brenda .primary-button-l-3 {
+      position: relative;
+      width: fit-content;
+      margin-top: -1px;
+      font-family: "Poppins-Bold", Helvetica;
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .home-brenda .desktop {
+      height: 1024px;
+      top: 1000px;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      background-color: #e8eefa78;
+      overflow: hidden;
+    }
+    
+    .home-brenda .overlap {
+      position: relative;
+      width: 100%;
+      height: 655px;
+      top: 215px;
+      left: -42px;
+      border-radius: 29px;
+    }
+    
+    .home-brenda .learn-more {
+      display: flex;
+      width: 100%;
+      height: 655px;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #e8eefa78;
+      border-radius: 29px;
+      transform: rotate(180deg);
+    }
+    
+    .home-brenda .body-wrapper {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 8px;
+      position: absolute;
+      top: 253px;
+      left: 333px;
+    }
+    
+    .home-brenda .body {
+      position: relative;
+      width: 842px;
+      height: 111px;
+    }
+    
+    .home-brenda .body-2 {
+      position: absolute;
+      top: -1px;
+      left: 50px;
+      font-family: "Poppins-Light", Helvetica;
+      font-weight: 300;
+      color: #000000;
+      font-size: 24px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .home-brenda .frame-4 {
+      display: inline-flex;
+      align-items: center;
+      gap: 148px;
+      position: absolute;
+      top: 120px;
+      left: 385px;
+    }
+    
+    .home-brenda .heading-3 {
+      position: relative;
+      width: 288px;
+      height: 84px;
+    }
+    
+    .home-brenda .heading-4 {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      font-family: "Poppins-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 32px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .home-brenda .btn-spotify {
+      position: relative;
+      width: 318px;
+      height: 93px;
+    }
+    
+    .home-brenda .frame-5 {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px;
+      position: absolute;
+      top: 444px;
+      left: 655px;
+    }
+    
+    .home-brenda .primary-button-l-4 {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 24px;
+      padding: 12px 24px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .home-brenda .desktop-2 {
+      height: 999px;
+      top: 2024px;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      background-color: #f8f8f8;
+      overflow: hidden;
+    }
+    
+    .home-brenda .overlap-2 {
+      position: absolute;
+      width: 1085px;
+      height: 603px;
+      top: 210px;
+      left: 177px;
+      background-color: #e8eefa78;
+  
+      background :radial-gradient(#dee4f5 45%, #e8eefa00 55%) ;
+    }
+    
+    .home-brenda .frame-6 {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 8px 90px;
+      position: absolute;
+      top: 192px;
+      left: 351px;
+    }
+    
+    .home-brenda .heading-5 {
+      position: relative;
+      width: 351px;
+      height: 84px;
+    }
+    
+    .home-brenda .primary-button-l-5 {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 24px;
+      padding: 12px 24px;
+      position: absolute;
+      top: 320px;
+      left: 435px;
+    }
+    
+    .home-brenda .ellipse-4 {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: -212px;
+      left: 6543px;
+    }
+    
+    .home-brenda .footer {
+      position: absolute;
+      width: 100%;
+      height: 400px;
+      top: 3023px;
+      left: 0;
+      background-color: transparent;
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-right-style: none;
+      border-bottom-style: none;
+      border-left-style: none;
+      border-color: #000000;
+    }
+    
+    .home-brenda .text-wrapper-2 {
+      position: absolute;
+      top: 95px;
+      left: 72px;
+      font-family: "Poppins-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 32px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .home-brenda .text-wrapper-3 {
+      position: absolute;
+      top: 143px;
+      left: 72px;
+      font-family: "Poppins-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .home-brenda .frame-7 {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 24px;
+      position: absolute;
+      top: 192px;
+      left: 72px;
+    }
+    
+    .home-brenda .img-2 {
+      position: relative;
+      width: 40px;
+      height: 40px;
+    }
+    
+    .home-brenda .text-wrapper-4 {
+      position: absolute;
+      top: 95px;
+      left: 512px;
+      font-family: "Poppins-Medium", Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .home-brenda .frame-8 {
+      display: inline-flex;
+      flex-direction: column;
+      height: 160px;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 8px;
+      position: absolute;
+      top: 144px;
+      left: 512px;
+    }
+    
+    .home-brenda .button-text-3 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .home-brenda .button-text-4 {
+      font-family: "Poppins-Medium", Helvetica;
+      font-weight: 500;
+      position: relative;
+      width: fit-content;
+      margin-top: -1px;
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+  
+  @media (max-aspect-ratio: 16/10) {
+      /* CSS untuk layar dengan rasio lebar-tinggi 16:10 */
+      .home-brenda {
+          /* Atur gaya CSS untuk layar 16:10 di sini */
+      }
+  }
+  @media (max-aspect-ratio: 16/9) {
+      /* CSS untuk layar dengan rasio lebar-tinggi 16:10 */
+      .home-brenda {
+          /* Atur gaya CSS untuk layar 16:10 di sini */
+      }
+  }
+  
+  @media (max-width: 768px) {
+      /* CSS untuk layar berukuran kecil (contoh: ponsel) */
+      .home-brenda {
+          /* Atur gaya CSS untuk layar kecil di sini */
+      }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+      /* CSS untuk layar berukuran menengah (contoh: tablet) */
+      .home-brenda {
+          /* Atur gaya CSS untuk layar menengah di sini */
+      }
+  }
