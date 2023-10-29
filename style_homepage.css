@@ -90,7 +90,16 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+  .home-brenda .text-wrapper a {
+    text-decoration: none; 
+    color: #000000; 
+    cursor: pointer; 
+   
+  }
+
+  .home-brenda .text-wrapper a:hover {
+      color: #0080ff;
+  }
   .home-brenda .frame {
     position: absolute;
     width: 670px;
@@ -264,9 +273,10 @@
     line-height: normal;
   }
   
+
   .home-brenda .desktop {
     height: 1024px;
-    top:1800px;
+    top:2600px;
     position: absolute;
     width: 100%;
     left: 0;
@@ -383,7 +393,7 @@
   
   .home-brenda .desktop-2 {
     height: 999px;
-    top: 1000px;
+    top: 1800px;
     position: absolute;
     width: 100%;
     left: 0;
@@ -427,7 +437,69 @@
     top: 320px;
     left: 435px;
   }
+  .home-brenda .desktop-3 {
+    height: 999px;
+    top: 1000px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: #f8f8f8;
+    overflow: hidden;
+  }
+  .home-brenda  .overlap-3{
+    position: absolute;
+    width: 1085px;
+    height: 603px;
+    top: 210px;
+    left: 177px;
+    background-color: #e8eefa78;
+    background :radial-gradient(#dee4f5 45%, #e8eefa00 55%) ;
+  }
+
+  .home-brenda .frame-10{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 8px 90px;
+    position: absolute;
+    top: 192px;
+    left: 351px;
+  }
+  .home-brenda .group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    position: absolute;
+    top: 300px; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+    left: 51px;
+  }
   
+  .home-brenda .btn-heart1 {
+    width: 30%; /* Sesuaikan lebar gambar sesuai kebutuhan */
+    height: auto; /* Sesuaikan tinggi gambar sesuai kebutuhan */
+    margin-right: 35px  
+  }
+
+  .home-brenda .heading-6{
+    position: relative;
+    width: 351px;
+    height: 84px;
+  }
+
+  .home-brenda .heading-7{
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
   .home-brenda .ellipse-4 {
     position: absolute;
     width: 100px;
@@ -440,7 +512,7 @@
     position: absolute;
     width: 100%;
     height: 400px;
-    top: 2823px;
+    top: 3600px;
     left: 0;
     background-color: transparent;
     border-top-width: 1px;
@@ -462,7 +534,12 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+  .home-brenda .text-wrapper-2 a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer; 
+  }
+
   .home-brenda .text-wrapper-3 {
     position: absolute;
     top: 143px;
