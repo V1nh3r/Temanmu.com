@@ -363,6 +363,18 @@
     line-height: normal;
   }
   
+  .landing-masuk-noreen .body-tulisan {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
   .landing-masuk-noreen .body-5 {
     position: absolute;
     width: 52px;
@@ -383,6 +395,90 @@
     line-height: normal;
   }
   
+  .landing-masuk-noreen .body-tulisan-1 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #0047ff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .landing-masuk-noreen .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background: rgba(0, 0, 0, 0.8); /* Latar belakang semi-transparan */
+    z-index: 1000; /* Membuat pop-up tampil di atas elemen lain */
+}
+
+.landing-masuk-noreen .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff; /* Warna latar belakang pop-up */
+    padding: 20px; /* Padding sesuai kebutuhan */
+    width: 55%; /* Lebar pop-up sesuai kebutuhan */
+    height: 55%;
+    text-align: center; /* Posisi teks ke tengah */
+    border: 1px solid #ccc; /* Bordered pop-up */
+    border-radius: 15px;
+}
+
+.landing-masuk-noreen .heading-5 {
+  position: relative;
+  width: 173px;
+  height: 48px;
+}
+
+.landing-masuk-noreen .heading-5 .text-wrapper-5 {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing-masuk-noreen .heading-6 {
+  position: relative;
+  width: 163px;
+  height: 24px;
+}
+
+.landing-masuk-noreen .heading-6 .text-wrapper-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.landing-masuk-noreen .heading-6 button {
+  background: none;
+  border: none;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #0047ff; /* Warna teks untuk tombol "Kembali" */
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 165px; /* Jarak antara teks dan tombol "Kembali" */
+}
+
   .landing-masuk-noreen .body-7 {
     position: absolute;
     width: 236px;
@@ -390,6 +486,7 @@
     top: 435px;
     left: 836px;
   }
+
   
   .landing-masuk-noreen .body-8 {
     position: absolute;
@@ -411,7 +508,41 @@
     left: 836px;
   }
   
-  
+    .landing-masuk-noreen .body-12 {
+    position: absolute;
+    width: 236px;
+    height: 36px;
+    top: 76px;
+    left: 36px;
+  }
+
+  .landing-masuk-noreen .body-14 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .landing-masuk-noreen .body-13 {
+    position: absolute;
+    width: 120px;
+    height: 36px;
+    top: 176px;
+    left: 36px;
+  }
+
+  .landing-masuk-noreen .body-15 {
+    position: absolute;
+    width: 120px;
+    height: 36px;
+    top: 276px;
+    left: 36px;
+  }
 
   input[type="text"] {
     width: 30%; 
@@ -424,8 +555,8 @@
     border-radius: 5px;
     border: 1px solid;
     border-color: #000000;
-   
 }
+
 input[type="password"] {
   width: 30%; 
     height: 50px; 
@@ -440,39 +571,107 @@ input[type="password"] {
    
 }
   
+input[type="text-daftar"] {
+  width: 500%; 
+  height: 50px; 
+  font-size: 18px; 
+  top: 120px;
+  position: absolute;
+  left: 36px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+input[type="email-daftar"] {
+  width: 500%; 
+  height: 50px; 
+  font-size: 18px; 
+  top: 220px;
+  position: absolute;
+  left: 36px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+
+input[type="password-daftar"] {
+  width: 500%; 
+  height: 50px; 
+  font-size: 18px; 
+  top: 320px;
+  position: absolute;
+  left: 36px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #000000;
+ 
+}
 
   
-  .landing-masuk-noreen .primary-button-m {
-    display: inline-flex;
-    align-items: flex-start;
-    position: absolute;
-    top: 804px;
-    left: 1061px;
-    box-shadow: 0px 4px 4px #00000040;
-  }
+.landing-masuk-noreen .primary-button-m {
+  display: inline-flex;
+  align-items: flex-start;
+  position: absolute;
+  top: 804px;
+  left: 1061px;
+  box-shadow: 0px 4px 4px #00000040;
   
-  .landing-masuk-noreen .primary-button-m-wrapper {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 24px;
-    position: relative;
-    flex: 0 0 auto;
-    background-color: #8da1d3;
-    border-radius: 4px;
-  }
+}
+
+.landing-masuk-noreen .primary-button-m button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #8da1d3;
+  border-radius: 4px;
+  position: relative;
+  width: fit-content;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none; 
+}
+
+.landing-masuk-noreen .primary-button-daftar {
+  display: inline-flex;
+  align-items: flex-start;
+  position: absolute;
+  top: 504px;
+  left: 400px;
+  box-shadow: 0px 4px 4px #00000040;
   
-  .landing-masuk-noreen .primary-button-m-2 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
+}
+
+.landing-masuk-noreen .primary-button-daftar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #8da1d3;
+  border-radius: 4px;
+  position: relative;
+  width: fit-content;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none; 
+}
   
   .landing-masuk-noreen .body-10 {
     position: absolute;
@@ -482,10 +681,26 @@ input[type="password"] {
     left: 994px;
   }
   
+  .landing-masuk-noreen .body-daftar {
+    position: absolute;
+    width: 166px;
+    height: 24px;
+    top: 467px;
+    left: 310px;
+  }
+
   .landing-masuk-noreen .body-11 {
     position: absolute;
     width: 57px;
     height: 24px;
     top: 767px;
     left: 1181px;
+  }
+
+  .landing-masuk-noreen .body-daftar-1 {
+    position: absolute;
+    width: 57px;
+    height: 24px;
+    top: 467px;
+    left: 481px;
   }
