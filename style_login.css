@@ -411,29 +411,36 @@
     left: 836px;
   }
   
-  .landing-masuk-noreen .rectangle {
+  
+
+  input[type="text"] {
+    width: 30%; 
+    height: 50px; 
+    font-size: 18px; 
     top: 471px;
     position: absolute;
-    width: 500px;
-    height: 48px;
     left: 836px;
     background-color: #ffffff;
     border-radius: 5px;
     border: 1px solid;
     border-color: #000000;
-  }
-  
-  .landing-masuk-noreen .rectangle-2 {
+   
+}
+input[type="password"] {
+  width: 30%; 
+    height: 50px; 
+    font-size: 18px; 
     top: 572px;
     position: absolute;
-    width: 500px;
-    height: 48px;
     left: 836px;
     background-color: #ffffff;
     border-radius: 5px;
     border: 1px solid;
     border-color: #000000;
-  }
+   
+}
+  
+
   
   .landing-masuk-noreen .primary-button-m {
     display: inline-flex;
