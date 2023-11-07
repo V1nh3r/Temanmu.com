@@ -1,0 +1,480 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.topik-noreen {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .topik-noreen .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    height: 1620px;
+    position: relative;
+  }
+  
+  .topik-noreen .overlap-group {
+    position: absolute;
+    width: 100%;
+    height: 458px;
+    top: 2px;
+    left: 0;
+  }
+  
+  .topik-noreen .unsplash {
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    top: 98px;
+    left: 0;
+  }
+  
+  .topik-noreen .header-baru-banget {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 76px;
+    position: absolute;
+    top: 0;
+    left: 1px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 80px #0000001a;
+  }
+  
+  .topik-noreen .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -14px;
+    margin-bottom: -14px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .topik-noreen .text-wrapper a {
+    text-decoration: none; 
+    color: #000000; 
+    cursor: pointer; 
+    transition: color 0.2s;
+  }
+
+  .topik-noreen .text-wrapper a:hover {
+      color: #0080ff;
+  }
+
+  .topik-noreen .frame {
+    gap: 40px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    display: inline-flex;
+    align-items: flex-start;
+  }
+  
+  .topik-noreen .element {
+    position: relative;
+    width: 70px;
+    height: 24px;
+  }
+  
+  .topik-noreen .text-wrapper-2 {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .topik-noreen .div-wrapper {
+    position: relative;
+    width: 44px;
+    height: 24px;
+  }
+  
+  .topik-noreen .text-wrapper-3 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .topik-noreen .element-2 {
+    position: relative;
+    width: 105px;
+    height: 24px;
+  }
+  
+  .topik-noreen .text-wrapper-4 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .topik-noreen .button-text-wrapper {
+    position: relative;
+    width: 114px;
+    height: 24px;
+  }
+  
+  .topik-noreen .element-3 {
+    position: relative;
+    width: 80px;
+    height: 24px;
+  }
+  
+  .topik-noreen .healthicons-ui-user {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .topik-noreen .body {
+    position: absolute;
+    top: 629px;
+    left: 80px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .topik-noreen .heading {
+    position: absolute;
+    top: 527px;
+    left: 80px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 68px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .topik-noreen .overlap-bg {
+    position: absolute;
+    width: 1280px;
+    height: 360px;
+    top: 732px;
+    left: 80px;
+    background-color: #ccd9f4;
+    border-radius: 40px;
+    filter: blur(100px);
+  }
+
+  .topik-noreen .overlap {
+    position: absolute;
+    width: 1280px;
+    height: 360px;
+    top: 732px;
+    left: 80px;
+  }
+  
+  .topik-noreen .body-2 {
+    display: inline-flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 260px;
+    left: 950px;
+  }
+  
+  .topik-noreen .frame-2 {
+    gap: 100px;
+    position: absolute;
+    top: 54px;
+    left: 146px;
+    display: inline-flex;
+    align-items: flex-start;
+  }
+  
+  .topik-noreen .frame-3 {
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: flex-start;
+  }
+  
+  .topik-noreen .button-with-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 16px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #8da1d3;
+    border-radius: 8px;
+    transition: transform 0.2s; /* Menambahkan efek transisi */
+  }
+
+  .topik-noreen .button-with-icon:hover {
+    transform: scale(1.1); /* Membesarkan tombol saat kursor berada di atasnya */
+    cursor: pointer;
+  }
+  
+  .topik-noreen .icon-percintaan {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-image: url(./btn/icon-love.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .topik-noreen .button-icon {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .topik-noreen .bff {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-image: url(./btn/icon-bff.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .topik-noreen .stress {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-image: url(./btn/icon-stress.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .topik-noreen .family {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-image: url(./btn/icon-family.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .topik-noreen .appearance {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-image: url(./btn/icon-appearance.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .topik-noreen .doctor {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-image: url(./btn/icon-medkit.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .topik-noreen .briefcase {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-image: url(./btn/icon-job.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .topik-noreen .trauma {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-image: url(./btn/icon-trauma.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .topik-noreen .coins {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-image: url(./btn/icon-money.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .topik-noreen .graduation-cap {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-image: url(./btn/icon-school.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .topik-noreen .routine {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-image: url(./btn/icon-routine.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .topik-noreen .luggage {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background-image: url(./btn/icon-holiday.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .topik-noreen .footer {
+    position: absolute;
+    width: 1440px;
+    height: 400px;
+    top: 1220px;
+    left: 0;
+    background-color: #ffffff;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-color: #000000;
+  }
+  
+  .topik-noreen .text-wrapper-5 {
+    position: absolute;
+    top: 95px;
+    left: 72px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .topik-noreen .text-wrapper-5 a {
+    text-decoration: none; 
+    color: #000000; 
+    cursor: pointer; 
+    transition: color 0.2s;
+  }
+
+  .topik-noreen .text-wrapper-5 a:hover {
+      color: #0080ff;
+  }
+  
+  .topik-noreen .text-wrapper-6 {
+    position: absolute;
+    top: 143px;
+    left: 72px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .topik-noreen .frame-4 {
+    gap: 24px;
+    position: absolute;
+    top: 192px;
+    left: 72px;
+    display: inline-flex;
+    align-items: flex-start;
+  }
+  
+  .topik-noreen .img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .topik-noreen .text-wrapper-7 {
+    position: absolute;
+    top: 95px;
+    left: 512px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .topik-noreen .frame-5 {
+    flex-direction: column;
+    height: 160px;
+    justify-content: center;
+    gap: 8px;
+    position: absolute;
+    top: 144px;
+    left: 512px;
+    display: inline-flex;
+    align-items: flex-start;
+  }
+  
+  .topik-noreen .button-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .topik-noreen .button-text-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }

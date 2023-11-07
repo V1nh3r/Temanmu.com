@@ -94,7 +94,7 @@
     text-decoration: none; 
     color: #000000; 
     cursor: pointer; 
-   
+    transition: color 0.2s;
   }
 
   .home-brenda .text-wrapper a:hover {
@@ -535,9 +535,14 @@
     line-height: normal;
   }
   .home-brenda .text-wrapper-2 a {
-    text-decoration: none;
-    color: #000000;
+    text-decoration: none; 
+    color: #000000; 
     cursor: pointer; 
+    transition: color 0.2s;
+  }
+
+  .home-brenda .text-wrapper-2 a:hover {
+      color: #0080ff;
   }
 
   .home-brenda .text-wrapper-3 {
