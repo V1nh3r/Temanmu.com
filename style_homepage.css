@@ -38,16 +38,24 @@
     background-color: #f8f8f8;
   }
   
+  .home-brenda .overlap-group-bg {
+    position: absolute;
+    width: 1985px;
+    height: 940px;
+    top: 80px;
+    left: -250px;
+    background-color: #e8eefa78;
+    background :radial-gradient(#dee4f5 45%, #e8eefa00 55%) ;
+  }
+  
   .home-brenda .overlap-group {
     position: relative;
     height: 1000px;
     width: 100%;
     display: grid;
-    background-color: #e8eefa78;
-    background :radial-gradient(#dee4f5 45%, #e8eefa00 55%) ;
-
+    
   }
-  
+
  /* .home-brenda .ellipse {
     position: absolute;
     width: 100%;
@@ -73,11 +81,9 @@
     background-color: #ffffff;
     border-top-style: none;
     border-right-style: none;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-left-style: none;
-    border-color: #000000;
-  }
+    border-bottom-style: none; 
+    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.2); 
+}
   
   .home-brenda .text-wrapper {
     position: absolute;
@@ -133,7 +139,6 @@
   
   .home-brenda .button-text-2 {
     font-family: "Poppins-SemiBold", Helvetica;
-    font-weight: 600;
     position: relative;
     width: fit-content;
     margin-top: -1px;
@@ -141,8 +146,15 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: normal;
+    transition: transform 0.2s;
+    cursor: pointer;
+    text-decoration: none;
   }
   
+  .home-brenda .button-text-2:hover {
+    font-weight: bold; 
+}
+
   .home-brenda .button-text-wrapper {
     display: inline-flex;
     align-items: center;
@@ -179,8 +191,13 @@
     position: relative;
     width: 24px;
     height: 24px;
+    transition: color 0.3s; 
   }
-  
+
+  .home-brenda .icon-profile:hover {
+    color: #0080ff;
+  }
+
   .home-brenda .frame-3 {
     display: inline-flex;
     align-items: flex-start;
@@ -241,6 +258,12 @@
     position: absolute;
     top: 658px;
     left: 641px;
+    transition: transform 0.2s; 
+  }
+
+  .home-brenda .primary-button-l:hover {
+    transform: scale(1.1);
+    cursor: pointer;
   }
   
   .home-brenda .primary-button-l-wrapper {
@@ -248,6 +271,12 @@
     align-items: flex-start;
     position: relative;
     flex: 0 0 auto;
+    transition: transform 0.2s; /* Menambahkan efek transisi */
+  }
+  
+  .home-brenda .primary-button-l-wrapper:hover {
+      transform: scale(1.1); /* Membesarkan gambar saat kursor berada di atasnya */
+      cursor: pointer;
   }
   
   .home-brenda .primary-button-l-2 {
@@ -280,7 +309,7 @@
     position: absolute;
     width: 100%;
     left: 0;
-    background-color: #e8eefa78;
+    background-color: #e8eefa34;
     overflow: hidden;
   }
   
@@ -288,7 +317,7 @@
     position: relative;
     width: 100%;
     height: 655px;
-    top: 215px;
+    top: 315px;
     left: -42px;
     border-radius: 29px;
   }
@@ -303,7 +332,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #e8eefa78;
     border-radius: 29px;
     transform: rotate(180deg);
   }
@@ -479,8 +507,14 @@
   .home-brenda .btn-heart1 {
     width: 30%; /* Sesuaikan lebar gambar sesuai kebutuhan */
     height: auto; /* Sesuaikan tinggi gambar sesuai kebutuhan */
-    margin-right: 35px  
-  }
+    margin-right: 35px;
+    transition: transform 0.2s; /* Menambahkan efek transisi */
+}
+
+.home-brenda .btn-heart1:hover {
+    transform: scale(1.1); /* Membesarkan gambar saat kursor berada di atasnya */
+}
+
 
   .home-brenda .heading-6{
     position: relative;
@@ -512,7 +546,7 @@
     position: absolute;
     width: 100%;
     height: 400px;
-    top: 3600px;
+    top: 3625px;
     left: 0;
     background-color: transparent;
     border-top-width: 1px;
@@ -557,6 +591,7 @@
     line-height: normal;
   }
   
+  
   .home-brenda .frame-7 {
     display: inline-flex;
     align-items: flex-start;
@@ -570,7 +605,40 @@
     position: relative;
     width: 40px;
     height: 40px;
+    transition: transform 0.2s;
   }
+
+  .home-brenda .img-2:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    content: url("btn/facebook_button2.png")
+}
+
+  .home-brenda .img-3 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+  }
+
+  .home-brenda .img-3:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+    content: url("btn/twitter_button3.png")
+}
+
+  .home-brenda .img-4 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+  }
+
+  .home-brenda .img-4:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+    content: url("btn/instagram_button2.png")
+}
   
   .home-brenda .text-wrapper-4 {
     position: absolute;
@@ -603,6 +671,10 @@
     position: relative;
     flex: 0 0 auto;
   }
+
+  .home-brenda .button-text-3 a {
+    text-decoration: none;
+}
   
   .home-brenda .button-text-4 {
     font-family: "Poppins-Medium", Helvetica;
@@ -614,6 +686,7 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: normal;
+    cursor: pointer; 
   }
   
 

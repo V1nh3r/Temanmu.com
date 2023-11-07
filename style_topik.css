@@ -108,8 +108,14 @@
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
+    transition: font-weight 0.3s ease; 
+    text-decoration: none; 
   }
   
+  .topik-noreen .text-wrapper-2:hover {
+    font-weight: bold; /* Mengubah berat teks menjadi bold saat dihover */
+}
+
   .topik-noreen .div-wrapper {
     position: relative;
     width: 44px;
@@ -126,7 +132,12 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: normal;
+    transition: font-weight 0.3s ease; 
   }
+
+  .topik-noreen .text-wrapper-3:hover {
+    font-weight: bold; /* Mengubah berat teks menjadi bold saat dihover */
+}
   
   .topik-noreen .element-2 {
     position: relative;
@@ -144,8 +155,14 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: normal;
+    transition: font-weight 0.3s ease; 
   }
+
+  .topik-noreen .text-wrapper-4:hover {
+    font-weight: bold;
+}
   
+
   .topik-noreen .button-text-wrapper {
     position: relative;
     width: 114px;
@@ -429,11 +446,44 @@
     align-items: flex-start;
   }
   
-  .topik-noreen .img {
+  .topik-noreen .img-2 {
     position: relative;
     width: 40px;
     height: 40px;
+    transition: transform 0.2s;
   }
+
+  .topik-noreen .img-2:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    content: url("btn/facebook_button2.png")
+}
+
+  .topik-noreen .img-3 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+  }
+
+  .topik-noreen .img-3:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+    content: url("btn/twitter_button3.png")
+}
+
+  .topik-noreen .img-4 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+  }
+
+  .topik-noreen .img-4:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+    content: url("btn/instagram_button2.png")
+}
   
   .topik-noreen .text-wrapper-7 {
     position: absolute;
@@ -477,4 +527,5 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: normal;
+    text-decoration: none; 
   }

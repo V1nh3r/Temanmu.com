@@ -34,10 +34,8 @@
     background-color: #ffffff;
     border-top-style: none;
     border-right-style: none;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-left-style: none;
-    border-color: #000000;
+    border-bottom-style: none; 
+    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.2);
   }
   
   .landing-masuk-noreen .text-wrapper {
@@ -52,11 +50,10 @@
     line-height: normal;
   }
   
-  .landing-masuk-noreen .text-wrapper a {
+  .landing-masuk-noreen .text-wrapper a{
     text-decoration: none; 
     color: #000000; 
     cursor: pointer; 
-   
   }
 
   .landing-masuk-noreen .text-wrapper a:hover {
@@ -95,16 +92,24 @@
   }
   
   .landing-masuk-noreen .button-text-2 {
-    font-family: "Poppins-SemiBold", Helvetica;
-    font-weight: 600;
+    font-family: "Poppins-Medium", Helvetica;
     position: relative;
     width: fit-content;
     margin-top: -1px;
+    font-weight: 500;
     color: #000000;
     font-size: 16px;
     letter-spacing: 0;
     line-height: normal;
+    transition: font-weight 0.3s
+    
   }
+
+  .landing-masuk-noreen .button-text-2:hover {
+    font-weight: bold; 
+    text-decoration: none;
+    
+}
   
   .landing-masuk-noreen .button-text-wrapper {
     display: inline-flex;
@@ -198,11 +203,44 @@
     left: 72px;
   }
   
-  .landing-masuk-noreen .img {
+  .landing-masuk-noreen .img-2 {
     position: relative;
     width: 40px;
     height: 40px;
+    transition: transform 0.2s;
   }
+
+  .landing-masuk-noreen .img-2:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    content: url("btn/facebook_button2.png")
+}
+
+  .landing-masuk-noreen .img-3 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+  }
+
+  .landing-masuk-noreen .img-3:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+    content: url("btn/twitter_button3.png")
+}
+
+  .landing-masuk-noreen .img-4 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+  }
+
+  .landing-masuk-noreen .img-4:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+    content: url("btn/instagram_button2.png")
+}
   
   .landing-masuk-noreen .text-wrapper-4 {
     position: absolute;
@@ -246,8 +284,13 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: normal;
+    text-decoration: none; 
   }
   
+  .button-text-4:hover {
+    cursor: pointer;
+}
+
   .landing-masuk-noreen .overlap-group {
     position: absolute;
     width: 740px;
