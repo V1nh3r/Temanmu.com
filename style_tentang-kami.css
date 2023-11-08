@@ -4,11 +4,22 @@
     box-sizing: border-box;
   }
   
-    html, body {
-      width: 100%;
-      margin: 0;
-      padding: 0;
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
     }
+    to {
+      opacity: 1; 
+    }
+  }
   
 .faqs-brenda {
     background-color: #ffffff;
@@ -109,21 +120,27 @@
   .fags-brenda .arcd{
     width: 80%;
     margin: 20px auto;
+    transition: display 0.5s ease; /* Menggunakan 0.5 detik untuk efek slow motion */
+
   }
 
   .faqs-brenda .soal {
     margin: 0;
   }
   
+  
   .faqs-brenda .h3 {
     margin: 0;
     cursor: pointer;
   }
 
-  .answer {
+  .faqs-brenda .answer {
     display: none;
     padding-top: 50px;
+    opacity: 0; /* Atur opasitas awal menjadi 0 */
+    transition: display 0.5s ease; /* Menggunakan 0.5 detik untuk efek slow motion */
   }
+  
 
   .faqs-brenda .arrow-icon {
     position: relative;

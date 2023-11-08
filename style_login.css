@@ -8,6 +8,17 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1; 
+    }
   }
 
 .landing-masuk-noreen {
@@ -595,6 +606,7 @@
     position: absolute;
     left: 836px;
     background-color: #ffffff;
+    padding: 15px 8px;
     border-radius: 5px;
     border: 1px solid;
     border-color: #000000;
@@ -607,6 +619,7 @@ input[type="password"] {
     top: 572px;
     position: absolute;
     left: 836px;
+    padding: 15px 8px;
     background-color: #ffffff;
     border-radius: 5px;
     border: 1px solid;

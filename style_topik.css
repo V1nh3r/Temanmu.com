@@ -8,8 +8,18 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    opacity: 0; /* Mulai dengan opasitas 0 (tidak terlihat) */
+    animation: fadeIn 1s ease-in-out forwards;
   }
 
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1; /* Akhir dengan opasitas 1 (terlihat) */
+    }
+  }
 
 .topik-noreen {
     background-color: #ffffff;
