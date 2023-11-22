@@ -156,16 +156,17 @@
   }
   
   .topik-noreen .text-wrapper-4 {
-    position: absolute;
-    top: -1px;
-    left: 0;
-    font-family: "Poppins-Medium", Helvetica;
-    font-weight: 500;
+    font-family: "Poppins-SemiBold", Helvetica;
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
     color: #000000;
     font-size: 16px;
     letter-spacing: 0;
     line-height: normal;
-    transition: font-weight 0.3s ease; 
+    transition: transform 0.2s;
+    cursor: pointer;
+    text-decoration: none;
   }
 
   .topik-noreen .text-wrapper-4:hover {

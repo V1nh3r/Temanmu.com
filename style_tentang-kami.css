@@ -330,12 +330,28 @@
     height: 24px;
   }
   
-  .faqs-brenda .healthicons-ui-user {
+  .faqs-brenda .icon-profile-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px 0px;
+    position: absolute;
+    top: -28px;
+    left: 600px;
+  }
+  
+  .faqs-brenda .icon-profile {
     position: relative;
     width: 24px;
     height: 24px;
+    transition: color 0.3s; 
   }
-  
+
+  .faqs-brenda .icon-profile:hover {
+    color: #0080ff;
+  }
+
   .faqs-brenda .footer {
     position: absolute;
     width: 1440px;
@@ -384,11 +400,44 @@
     left: 72px;
   }
   
-  .faqs-brenda .img {
+  .faqs-brenda .img-2 {
     position: relative;
     width: 40px;
     height: 40px;
+    transition: transform 0.2s;
   }
+
+  .faqs-brenda .img-2:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    content: url("btn/facebook_button2.png")
+}
+
+  .faqs-brenda .img-3 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+  }
+
+  .faqs-brenda .img-3:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+    content: url("btn/twitter_button3.png")
+}
+
+  .faqs-brenda .img-4 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+  }
+
+  .faqs-brenda .img-4:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+    content: url("btn/instagram_button2.png")
+}
   
   .faqs-brenda .text-wrapper-7 {
     position: absolute;
