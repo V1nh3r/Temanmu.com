@@ -130,19 +130,20 @@
     display: flex;
     width: 616px;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-around;
+    gap: 10px;  
     padding: 20px 10px 10px;
     position: absolute;
     top: 10px;
     left: -100px;
+   
   }
   
   .home-brenda .button-text {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     padding: 10px 20px;
     position: relative;
     flex: 0 0 auto;
