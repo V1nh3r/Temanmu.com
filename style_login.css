@@ -679,7 +679,7 @@ input[type="password-daftar"] {
   
 }
 
-.landing-masuk-noreen .primary-button-m button {
+.landing-masuk-noreen .primary-button-m a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -709,7 +709,7 @@ input[type="password-daftar"] {
   
 }
 
-.landing-masuk-noreen .primary-button-daftar button {
+.landing-masuk-noreen .primary-button-daftar a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -728,6 +728,7 @@ input[type="password-daftar"] {
   line-height: normal;
   border: none; 
 }
+
   
   .landing-masuk-noreen .body-10 {
     position: absolute;
