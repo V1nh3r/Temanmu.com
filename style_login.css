@@ -323,7 +323,7 @@
   
   .landing-masuk-noreen .body-2 {
     position: absolute;
-    top: -1px;
+    top: -50px;
     left: 0;
     font-family: "Poppins-Medium", Helvetica;
     font-weight: 500;
@@ -343,7 +343,7 @@
   
   .landing-masuk-noreen .heading-2 {
     position: absolute;
-    top: -1px;
+    top: -30px;
     left: 0;
     font-family: "Poppins-Bold", Helvetica;
     font-weight: 700;
