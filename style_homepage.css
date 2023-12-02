@@ -60,17 +60,42 @@
     background :radial-gradient(#ffffff 3%, #e8eefa00 75%) ;
   }
 
-  .home-brenda .overlap-group-bg-hal-1 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 100px;
-    left: -250px;
+    .home-brenda .container{
+      width: 100%;
+      transform: translate(-0%,-0%);
+      overflow: hidden;
+      position: relative; 
+    }
+
+    .home-brenda .container .overlap-group-bg-hal-1 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 100px;
+      left: -250px;
+      display: flex;
+      animation: slide 40s infinite;
+    }
+    
+  .hal-1{
+    width: 119%;
+    object-fit: cover;
   }
+
+  @keyframes slide {
+    0%, 119% {
+      transform: translateX(160);
+    }
   
-.hal-1{
-  width: 119%;
-}
+    33.33% {
+      transform: translateX(-71.5%);
+    }
+  
+    66.66% {
+      transform: translateX(-160%);
+    }
+  }
+
   .home-brenda .overlap-group {
     position: relative;
     height: 1000px;
@@ -120,7 +145,7 @@
     width: 670px;
     height: 94px;
     top: 2px;
-    left: 950px;
+    left: 800px;
   }
   
   .home-brenda .frame-2 {
