@@ -212,16 +212,40 @@
   }
   
   .home-brenda .icon-profile-wrapper {
-    display: inline-flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     gap: 10px;
     padding: 25px 0px;
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 636px;
+    
   }
-  
+
+  .popup-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(249, 249, 249, 0.893);
+    border: 1px solid #ddd;
+    padding: 20px;
+    z-index: 1;
+    top: 65px;
+    left: -90px;
+    width: 150px
+}
+
+.popup-content a {
+  text-decoration: none; /* Menghapus garis bawah (underline) dari tautan */
+  color: #333; /* Mengatur warna teks tautan */
+  display: block;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.icon-profile-wrapper:hover .popup-content {
+  display: block;
+}
   .home-brenda .icon-profile {
     position: relative;
     width: 24px;
