@@ -157,7 +157,7 @@
     padding: 20px 10px 10px;
     position: absolute;
     top: 10px;
-    left: -100px;
+    left: 20px;
    
   }
   
@@ -195,7 +195,6 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 10px 9%;
     position: relative;
     flex: 0 0 auto;
   }
@@ -279,6 +278,7 @@
     letter-spacing: 0;
     line-height: normal;
     text-align: center;
+    left:120px;
   }
   
   .home-brenda .heading-wrapper {
@@ -488,6 +488,7 @@
   position: relative;
   width: 137px;
   height: 40px;
+  top: -20px;
 }
 
 .pop-up-login-spotify .millions-of-songs {
@@ -509,6 +510,7 @@
   gap: 12px;
   position: relative;
   flex: 0 0 auto;
+  
 }
 
 .pop-up-login-spotify .div {
@@ -521,6 +523,8 @@
   gap: 12px;
   position: relative;
   flex: 0 0 auto;
+  left: 30px;
+  top: 20px;
 }
 
 .pop-up-login-spotify .text-wrapper-spotify {
@@ -541,6 +545,7 @@
   width: 20.5px;
   height: 22.88px;
   margin-right: -0.75px;
+  
 }
 
 .pop-up-login-spotify .new-to-spotify-sign {
@@ -553,6 +558,7 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  top: 50px;
 }
 
 .pop-up-login-spotify .span {

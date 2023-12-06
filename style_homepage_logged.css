@@ -157,10 +157,9 @@
     padding: 20px 10px 10px;
     position: absolute;
     top: 10px;
-    left: -100px;
-   
+    left: 20px;
   }
-  
+
   .home-brenda .button-text {
     display: inline-flex;
     align-items: center;
@@ -195,7 +194,6 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 10px 9%;
     position: relative;
     flex: 0 0 auto;
   }
@@ -278,6 +276,7 @@
     letter-spacing: 0;
     line-height: normal;
     text-align: center;
+    left:120px;
   }
   
   .home-brenda .heading-wrapper {
