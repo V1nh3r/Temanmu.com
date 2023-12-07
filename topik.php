@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style_topik.css" />
+  </head>
+  <body>
+    <div class="topik-noreen">
+      <div class="div">
+        <div class="overlap-group">
+          <img class="unsplash" src="btn/unsplash_0aMMMUjiiEQ.svg" />
+          <div class="header-baru-banget">
+            <div class="text-wrapper">
+              <a href="homepage.php" class="home_button">Temanmu.com</a>
+          </div>
+            <div class="frame">
+              <div class="element">
+                <a href="homepage.php" class="text-wrapper-2">Beranda</a>
+              </div>
+              <div class="div-wrapper"><div class="text-wrapper-3">Topik</div></div>
+              <div class="element-2"><div class="text-wrapper-4">Curhatanmu</div></div>
+              <div class="button-text-wrapper">
+                <a href="tentang-kami.php" class="text-wrapper-4">Tentang kami</a>
+              </div>
+              <div class="element-3"><div class="text-wrapper-4">Testimoni</div></div>
+              <a href="login.php">
+                <img class="healthicons-ui-user" src="btn/profile_button.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="body">dengan Temanmu, pendengarmu</div>
+        <div class="heading">Pilih topik ceritamu</div>
+        <div class="overlap-bg"></div>
+        <div class="overlap">
+          <div class="body-2"></div>
+          <div class="frame-2">
+            <div class="frame-3">
+              <div class="button-with-icon">
+                <div class="icon-percintaan"></div>
+                <a href="login.php" class="button-icon">Percintaan</a>
+              </div>
+              <div class="button-with-icon">
+                <div class="bff"></div>
+                <a href="login.php" class="button-icon">Persahabatan</a>
+              </div>
+              <div class="button-with-icon">
+                <div class="stress"></div>
+                <a href="login.php" class="button-icon">Depresi</a>
+              </div>
+            </div>
+            <div class="frame-3">
+              <div class="button-with-icon">
+                <div class="family"></div>
+                <a href="login.php" class="button-icon">Keluarga</a>
+              </div>
+              <div class="button-with-icon">
+                <div class="appearance"></div>
+                <a href="login.php" class="button-icon">Penampilan</a>
+              </div>
+              <div class="button-with-icon">
+                <div class="doctor"></div>
+                <a href="login.php" class="button-icon">Kesehatan</a>
+              </div>
+            </div>
+            <div class="frame-3">
+              <div class="button-with-icon">
+                <div class="briefcase"></div>
+                <a href="login.php" class="button-icon">Pekerjaan</a>
+              </div>
+              <div class="button-with-icon">
+                <div class="trauma"></div>
+                <a href="login.php" class="button-icon">Trauma</a>
+              </div>
+              <div class="button-with-icon">
+                <div class="coins"></div>
+                <a href="login.php" class="button-icon">Keuangan</a>
+              </div>
+            </div>
+            <div class="frame-3">
+              <div class="button-with-icon">
+                <div class="graduation-cap"></div>
+                <a href="login.php" class="button-icon">Pendidikan</a>
+              </div>
+              <div class="button-with-icon">
+                <div class="routine"></div>
+                <a href="login.php" class="button-icon">Keseharian</a>
+              </div>
+              <div class="button-with-icon">
+                <div class="luggage"></div>
+                <div class="button-icon">Liburan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="text-wrapper-5">
+            <a href="homepage.php" class="home_button">Temanmu.com</a>
+          </div>
+          <div class="text-wrapper-6">Temanmu, pendengarmu</div>
+          <div class="frame-4">
+            <img class="img-2" src="btn/facebook_button.png" />
+            <img class="img-3" src="btn/twitter_button.png" />
+            <img class="img-4" src="btn/instagram_button.png" />
+          </div>
+          <div class="text-wrapper-7">Sitemap</div>
+          <div class="frame-5">
+            <div class="button-text">
+              <a href="homepage.php" class="button-text-2">Beranda</a>
+             </div>
+            <div class="button-text"><div class="button-text-2">Topik</div></div>
+            <div class="button-text"><div class="button-text-2">Curhatanmu</div></div>
+            <div class="button-text">
+              <a href="tentang-kami.php" class="button-text-2">Tentang Kami</a>
+              </div>
+            <div class="button-text"><div class="button-text-2">Testimoni</div></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js_body.js"></script>  
+  </body>
+</html>
