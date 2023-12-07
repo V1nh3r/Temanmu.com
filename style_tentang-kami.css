@@ -205,11 +205,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 40px 76px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 1px;
     background-color: #ffffff;
     box-shadow: 0px 10px 80px #0000001a;
+    z-index: 1000;
   }
   
   .faqs-brenda .text-wrapper-2 {
@@ -481,4 +482,6 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: normal;
+    text-decoration: none; 
+
   }

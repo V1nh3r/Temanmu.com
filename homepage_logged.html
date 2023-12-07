@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style_homepage.css" />
+    <link rel="stylesheet" href="style_homepage_logged.css" />
   </head> 
   <body>
     <div class="home-brenda">
@@ -11,26 +11,25 @@
             <div class="overlap-group">
             <header class="header">
               <div class="text-wrapper">
-                <a href="homepage.html" class="home_button">Temanmu.com</a>
+                <a href="homepage_logged.html" class="home_button">Temanmu.com</a>
               </div>            
               <div class="frame">
                 <div class="frame-2">
                   <div class="button-text"><div class="button-text-2">Beranda</div></div>
                   <div class="button-text-wrapper">
-                    <a href="topik.html" class="button-text-2">Topik</a>
+                    <a href="topik_logged.html" class="button-text-2">Topik</a>
                   </div>
                   <div class="button-text-wrapper"><div class="button-text-2">Curhatanmu</div></div>
                   <div class="button-text-wrapper">
-                    <a href="tentang-kami.html" class="button-text-2">Tentang kami</a>
+                    <a href="tentang-kami_logged.html" class="button-text-2">Tentang kami</a>
                   </div>
                   <div class="div-wrapper"><div class="button-text-2">Testimoni</div></div>
                 </div>
                 <div class="icon-profile-wrapper"><img class="icon-profile" src="btn/profile_button.png" />
                   <div class="popup-content">
-                      <p><a href="register.html">Register</a></p>
-                      <p><a href="login.html">Login</a></p>
+                    <p><a href="profile.html">My Account</a></p>
+                    <p><a href="homepage.html">LogOut</a></p>
                   </div>
-              </div>
               </div>
             </header>
             <div class="container">
@@ -52,7 +51,7 @@
             <div class="primary-button-l">
               <div class="primary-button-l-wrapper">
                 <div class="primary-button-l-2">
-                    <a href="topik.html" class="primary-button-l-3">Telusuri Temanmu</a>
+                    <a href="topik_logged.html" class="primary-button-l-3">Telusuri Temanmu</a>
                 </div>
             </div>
             </div>
@@ -75,24 +74,9 @@
               <img class="btn-spotify" src="btn/spotify_button.svg" />
             </div>
             <div class="frame-5">
-              <div class="primary-button-l-4" onclick="showPopup()">
+              <div class="primary-button-l-4">
                 <div class="primary-button-l-wrapper">
                   <div class="primary-button-l-2"><div class="primary-button-l-3">Hubungkan</div></div>
-                </div>
-                <div class="pop-up-login-spotify" id="popup">
-                  <img class="vector" src="btn/icon-spotify.svg" />
-                  <p class="millions-of-songs">Millions of songs,<br />Free on Spotify</p>
-                  <div class="frame-spotify">
-                    <div class="div">
-                      <div class="text-wrapper-spotify">Log In</div>
-                      <img class="group-spotify" src="btn/vector.svg" />
-                    </div>
-                  </div>
-                  <p class="new-to-spotify-sign">
-                    <span class="span">New to Spotify?</span>
-                    <span class="text-wrapper-2-spotify">&nbsp;</span>
-                    <span class="text-wrapper-3-spotify">Sign up for free</span>
-                  </p>
                 </div>
               </div>
             </div>
@@ -106,7 +90,7 @@
             <div class="primary-button-l-5">
               <div class="primary-button-l-wrapper">
                 <div class="primary-button-l-2">
-                    <a href="login.html" class="primary-button-l-3">Mulai Curhat</a>
+                    <a href="curhatanmu.html" class="primary-button-l-3">Mulai Curhat</a>
                 </div>
               </div>
             </div>
@@ -140,7 +124,7 @@
         </div>
         <footer class="footer">
           <div class="text-wrapper-2">
-            <a href="homepage.html" class="home_button">Temanmu.com</a>
+            <a href="homepage_logged.html" class="home_button">Temanmu.com</a>
           </div>
           <div class="text-wrapper-3">Temanmu, pendengarmu</div>
           <div class="frame-7">
@@ -151,18 +135,18 @@
           <div class="text-wrapper-4">Sitemap</div>
           <div class="frame-8">
             <div class="button-text-3">
-              <a href="homepage.html">
+              <a href="homepage_logged.html">
                   <div class="button-text-4">Beranda</div>
               </a>
           </div>
           <div class="button-text-3">
-              <a href="topik.html">
+              <a href="topik_logged.html">
                   <div class="button-text-4">Topik</div>
               </a>
           </div>
             <div class="button-text-3"><div class="button-text-4">Curhatanmu</div></div>
             <div class="button-text-3">
-              <a href="tentang-kami.html">
+              <a href="tentang-kami_logged.html">
                   <div class="button-text-4">Tentang kami</div>
               </a>
           </div>           
@@ -171,13 +155,6 @@
         </footer>
       </div>
     </div>
-    <script src="js_body.js"></script> 
-    <script>
-      // JavaScript untuk menampilkan dan menyembunyikan popup
-      function showPopup() {
-        var popup = document.getElementById('popup');
-        popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'block' : 'none';
-      }
-    </script>
+    <script src="js_body.js"></script>  
   </body>
 </html>

@@ -37,7 +37,7 @@
   }
   
   .landing-masuk-noreen .header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100px;
     top: 0;
@@ -47,6 +47,7 @@
     border-right-style: none;
     border-bottom-style: none; 
     box-shadow: 0 4px 34px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
   }
   
   .landing-masuk-noreen .text-wrapper {
@@ -447,7 +448,13 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: normal;
+    text-decoration: none;
   }
+  
+  #daftar-button a {
+    text-decoration: none;
+  }
+  
   
   .landing-masuk-noreen .body-tulisan-1 {
     position: absolute;
@@ -676,8 +683,15 @@ input[type="password-daftar"] {
   top: 804px;
   left: 1061px;
   box-shadow: 0px 4px 4px #00000040;
+  transition: transform 0.2s;
   
 }
+
+.landing-masuk-noreen .primary-button-m:hover{
+  transform: scale(1.1); 
+    cursor: pointer;
+}
+
 
 .landing-masuk-noreen .primary-button-m a {
   display: inline-flex;
@@ -697,6 +711,8 @@ input[type="password-daftar"] {
   letter-spacing: 0;
   line-height: normal;
   border: none; 
+  text-decoration: none; 
+
 }
 
 .landing-masuk-noreen .primary-button-daftar {
