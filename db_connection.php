@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "temanmu-main.com";
+$dbname = "temanmu.com-main";
 
 $conn =mysqli_connect($servername, $username, $password, $dbname);
 
