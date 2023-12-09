@@ -10,7 +10,7 @@ error_reporting(E_ALL);
 
 // Check if form was submitted
 if (isset($_POST['submit'])) {
-    echo '<script>alert("reached point b")</script>';
+   // echo '<script>alert("reached point b")</script>';
     $username = $_POST['username'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $email = $_POST['email'];
@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
         array_push($errors, "Please fill all the fields.");
     }
 
-    echo '<script>alert("reached this point")';
+   // echo '<script>alert("reached this point")';
 
     // If no errors, proceed to insert data into the database
     if (count($errors) == 0) {
@@ -34,8 +34,8 @@ if (isset($_POST['submit'])) {
             $stmt->bind_param("ssss", $username, $email, $password, $nama_lengkap);
             if ($stmt->execute()) {
                 // Redirect or inform the user of successful registration
-                echo '<script>alert("Register Successful")</script>';
-                // header("Location: login.php");
+               // echo '<script>alert("Register Successful")</script>';
+                 header("Location: login.php");
                 // exit();
             } else {
                 // Handle error in execution
