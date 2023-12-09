@@ -1,54 +1,81 @@
 <!DOCTYPE html>
-<?php
-session_start(); // Start a new session
+<html>
+<head>
+    <!-- Your head content, like title, styles, etc -->
+    <title>Login</title>
+    <!-- Add your CSS styles if needed -->
+    <style>
+        .error { color: red; } /* Style for error messages */
+    </style>
+</head>
+<body>
 
-// Include database connection file
-require_once 'db_connection.php';
+     
 
-// Check if form was submitted
+    <?php
+    session_start(); // Start a new session
+
+    // Include database connection file
+    require_once 'db_connection.php';
+
+    // Initialize error message variable
+    $error = '';
+
+    // Check if form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+  $username = $_POST['username'];
+  $password = $_POST['password'];
 
-    // SQL to check the username and password
-    $sql = "SELECT id, password FROM users WHERE username = ?";
+  // SQL to check the username and password
+  $sql = "SELECT id, password FROM users WHERE username = ?";
 
-    // Prepare statement
-    if ($stmt = $conn->prepare($sql)) {
-        $stmt->bind_param("s", $username);
-        
-        // Attempt to execute the prepared statement
-        if ($stmt->execute()) {
-            $stmt->store_result();
+  // Prepare statement
+  if ($stmt = $conn->prepare($sql)) {
+      $stmt->bind_param("s", $username);
 
-            // Check if username exists
-            if ($stmt->num_rows == 1) {
-                $stmt->bind_result($id, $hashed_password);
-                if ($stmt->fetch()) {
-                    // Verify the password
-                    if (password_verify($password, $hashed_password)) {
-                        // Password is correct, start a new session
-                        $_SESSION['loggedin'] = true;
-                        $_SESSION['id'] = $id;
-                        $_SESSION['username'] = $username;                        
-                        header("Location: homepage_logged.php");
-                        exit();
-                    } else {
-                        $error = "Invalid password.";
-                    }
-                }
-            } else {
-                $error = "Invalid username.";
-            }
-        } else {
-            echo "Oops! Something went wrong. Please try again later.";
-        }
+      // Attempt to execute the prepared statement
+      if ($stmt->execute()) {
+          $stmt->store_result();
 
-        $stmt->close();
-    }
+          // Check if username exists
+          if ($stmt->num_rows == 1) {
+              $stmt->bind_result($id, $hashed_password);
+              if ($stmt->fetch()) {
+                  // Verify the password
+                  if (password_verify($password, $hashed_password)) {
+                      // Password is correct, start a new session
+                      session_start();
+                      $_SESSION['loggedin'] = true;
+                      $_SESSION['id'] = $id;
+                      $_SESSION['username'] = $username;
+                      header("Location: homepage_logged.php");
+                      exit();
+                  } else {
+                      // Password is incorrect
+                      echo '<script>alert("Invalid username or password."); window.location = "login.php";</script>';
+                  }
+              }
+          } else {
+              // Username does not exist
+              echo '<script>alert("Invalid username or password."); window.location = "login.php";</script>';
+          }
+      } else {
+          echo "Oops! Something went wrong. Please try again later.";
+      }
+
+      // Close statement
+      $stmt->close();
+  }
+
+  // Close connection
+  $conn->close();
 }
-$conn->close();
-?>
+
+    // Display error message if any
+    if(!empty($error)) {
+        echo '<p class="error">'.$error.'</p>';
+    }
+    ?>
 
 
 <html>
@@ -139,19 +166,21 @@ $conn->close();
         </div>
         <div class="body-7"><div class="body-8">Username</div></div>
         <div class="body-9"><div class="body-8">Password</div></div>
+        <<form method="post" action="">
         <div class="rectangle">
-          <<form method="post" action="login.php">
+          
             <input type="text" name="username" placeholder="Enter your username" required />
             <input type="password" name="password" placeholder="Enter your password" required />
             <input type="submit" value="Masuk">
-          </form>
+          
           
         </div>
         
 
         <div class="primary-button-m">
-        <a href="homepage_logged.php" class="primary-button-m-2">Masuk</a>
+        <button type="submit" class="primary-button-m-2" name="submit">Masuk</button>
         </div>
+        <<form method="post" action="">
         <div class="body-10"><div class="body-4">Sambungkan akun ke</div></div>
         <div class="body-11"><div class="body-6">Spotify</div></div>
       </div>

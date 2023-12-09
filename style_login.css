@@ -693,7 +693,7 @@ input[type="password-daftar"] {
 }
 
 
-.landing-masuk-noreen .primary-button-m a {
+.landing-masuk-noreen .primary-button-m button {
   display: inline-flex;
   align-items: center;
   justify-content: center;

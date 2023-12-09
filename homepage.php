@@ -75,9 +75,24 @@
               <img class="btn-spotify" src="btn/spotify_button.svg" />
             </div>
             <div class="frame-5">
-              <div class="primary-button-l-4">
+              <div class="primary-button-l-4" onclick="showPopup()">
                 <div class="primary-button-l-wrapper">
                   <div class="primary-button-l-2"><div class="primary-button-l-3">Hubungkan</div></div>
+                </div>
+                <div class="pop-up-login-spotify" id="popup">
+                  <img class="vector" src="btn/icon-spotify.svg" />
+                  <p class="millions-of-songs">Millions of songs,<br />Free on Spotify</p>
+                  <div class="frame-spotify">
+                    <div class="div">
+                      <div class="text-wrapper-spotify">Log In</div>
+                      <img class="group-spotify" src="btn/vector.svg" />
+                    </div>
+                  </div>
+                  <p class="new-to-spotify-sign">
+                    <span class="span">New to Spotify?</span>
+                    <span class="text-wrapper-2-spotify">&nbsp;</span>
+                    <span class="text-wrapper-3-spotify">Sign up for free</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -156,6 +171,13 @@
         </footer>
       </div>
     </div>
-    <script src="js_body.js"></script>  
+    <script src="js_body.js"></script> 
+    <script>
+      // JavaScript untuk menampilkan dan menyembunyikan popup
+      function showPopup() {
+        var popup = document.getElementById('popup');
+        popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'block' : 'none';
+      }
+    </script>
   </body>
 </html>
