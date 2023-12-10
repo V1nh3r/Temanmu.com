@@ -3,14 +3,10 @@
 // Include database connection file
 include 'db_connection.php';
 
-// echo '<script>alert("reached point a")</script>';
-
 error_reporting(E_ALL);
-
 
 // Check if form was submitted
 if (isset($_POST['submit'])) {
-   // echo '<script>alert("reached point b")</script>';
     $username = $_POST['username'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $email = $_POST['email'];
@@ -23,27 +19,37 @@ if (isset($_POST['submit'])) {
     if (empty($username) || empty($email) || empty($password) || empty($nama_lengkap)) {
         array_push($errors, "Please fill all the fields.");
         echo '<script>alert("Please fill all the fields."); window.location = "register.php";</script>';
-        
     }
-    
-   
 
-    // If no errors, proceed to insert data into the database
-    if (count($errors) == 0) {
-        // Prepare an insert statement
-        $sql = "INSERT INTO users (username, email, password, nama_lengkap) VALUES (?, ?, ?, ?)";
-        if ($stmt = $conn->prepare($sql)) {
-            $stmt->bind_param("ssss", $username, $email, $password, $nama_lengkap);
-            if ($stmt->execute()) {
-                // Redirect or inform the user of successful registration
-                echo '<script>alert("Register Successful")</script>';
-                 header("Location: login.php");
-                // exit();
-            } else {
-                // Handle error in execution
-                echo "<script>alert('Something went wrong. Please try again later.')</script>";
+    // Check if user already exists
+    $checkUserSql = "SELECT * FROM users WHERE username = ? OR email = ?";
+    if ($checkStmt = $conn->prepare($checkUserSql)) {
+        $checkStmt->bind_param("ss", $username, $email);
+        $checkStmt->execute();
+        $result = $checkStmt->get_result();
+        if ($result->num_rows > 0) {
+            // User exists
+            echo '<script>alert("Username or Email already exists. Please try a different one."); window.location = "register.php";</script>';
+            $checkStmt->close();
+        } else {
+            // If no errors and no existing user, proceed to insert data into the database
+            if (count($errors) == 0) {
+                // Prepare an insert statement
+                $sql = "INSERT INTO users (username, email, password, nama_lengkap) VALUES (?, ?, ?, ?)";
+                if ($stmt = $conn->prepare($sql)) {
+                    $stmt->bind_param("ssss", $username, $email, $password, $nama_lengkap);
+                    if ($stmt->execute()) {
+                        // Redirect or inform the user of successful registration
+                        echo '<script>alert("Register Successful")</script>';
+                        header("Location: login.php");
+                        // exit();
+                    } else {
+                        // Handle error in execution
+                        echo "<script>alert('Something went wrong. Please try again later.')</script>";
+                    }
+                    $stmt->close();
+                }
             }
-            $stmt->close();
         }
     }
 
