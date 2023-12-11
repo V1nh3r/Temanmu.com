@@ -362,9 +362,9 @@
   }
   
 
-  .home-brenda .desktop {
-    height: 1024px;
-    top:3700px;
+.home-brenda .desktop {
+    height: 1000px;
+    top:2750px;
     position: absolute;
     width: 100%;
     left: 0;
@@ -466,6 +466,125 @@
     content: url("btn/spotify_green_button.svg");
   }
 
+  .pop-up-login-spotify {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    padding: 78px 228px;
+    position: relative;
+    background-color: #121212;
+    border-radius: 32px;
+    overflow: hidden;
+    top: -400px;
+    left: -400px;
+  }
+  
+  .pop-up-login-spotify .vector {
+    position: relative;
+    width: 137px;
+    height: 40px;
+    top: -40px;
+  }
+  
+  .pop-up-login-spotify .millions-of-songs {
+    position: relative;
+    width: 250%;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    left: -100px;
+  }
+  
+  .pop-up-login-spotify .frame-spotify {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+    
+  }
+  
+  .pop-up-login-spotify .div {
+    width: 112px;
+    height: 38px;
+    background-color: #1ed760;
+    border-radius: 32px;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+    left: 15px;
+    top: 35px;
+  }
+  
+  .pop-up-login-spotify .text-wrapper-spotify {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    left: -10px;
+    top: 10px;
+  }
+  
+  .pop-up-login-spotify .group-spotify {
+    position: relative;
+    width: 20.5px;
+    height: 22.88px;
+    margin-right: -0.75px;
+    left: 35px;
+    top: -22px;
+    
+  }
+  
+  .pop-up-login-spotify .new-to-spotify-sign {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    top: 50px;
+  }
+  
+  .pop-up-login-spotify .span {
+    font-weight: 500;
+    color: #9b9b9b;
+    left: 5px;   
+    position: inherit;
+  }
+  
+  .pop-up-login-spotify .text-wrapper-2-spotify {
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  .pop-up-login-spotify .text-wrapper-3-spotify {
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    top: 3px;
+    position: relative;
+  }
+  
+
+
   .home-brenda .frame-5 {
     display: inline-flex;
     flex-direction: column;
@@ -487,8 +606,8 @@
   }
   
   .home-brenda .desktop-2 {
-    height: 700px;
-    top: 3000px;
+    height: 1024px;
+    top: 3500px;
     position: absolute;
     width: 100%;
     left: 0;
@@ -677,7 +796,7 @@
     position: absolute;
     width: 100%;
     height: 400px;
-    top: 4700px;
+    top: 4300px;
     left: 0;
     background-color: transparent;
     border-top-width: 1px;
