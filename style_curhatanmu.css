@@ -1,0 +1,667 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+    html, body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      opacity: 0; 
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1; 
+      }
+    }
+  
+    
+  .curhatanmu {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      overflow-x: hidden
+    }
+    
+    .curhatanmu .div {
+      background-color: #ffffff;
+      width: 100%; 
+      height: auto; 
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .curhatanmu .landing-page {
+      position: absolute;
+      width: 100%;
+      height: 1000px;
+      top: 0;
+      left: 0;
+      background-color: #f8f8f8;
+    }
+    
+  
+    .curhatanmu .overlap-group {
+      position: relative;
+      height: 1000px;
+      width: 100%;
+      display: grid;
+      
+    }
+    
+  
+    .curhatanmu .header {
+      position: fixed;
+      width: 100%;
+      height: 100px;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      border-top-style: none;
+      border-right-style: none;
+      border-bottom-style: none; 
+      box-shadow: 0 4px 34px rgba(0, 0, 0, 0.2); 
+      z-index: 1000;
+  }
+  
+    
+    .curhatanmu .text-wrapper {
+      position: absolute;
+      top: 27px;
+      left: 71px;
+      font-family: "Poppins-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 2em;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    .curhatanmu .text-wrapper a {
+      text-decoration: none; 
+      color: #000000; 
+      cursor: pointer; 
+      transition: color 0.2s;
+    }
+  
+    .curhatanmu .text-wrapper a:hover {
+        color: #0080ff;
+    }
+    .curhatanmu .frame {
+      position: absolute;
+      width: 670px;
+      height: 94px;
+      top: 2px;
+      left: 800px;
+    }
+    
+    .curhatanmu .frame-2 {
+      display: flex;
+      width: 616px;
+      align-items: center;
+      justify-content: space-around;
+      gap: 10px;  
+      padding: 20px 10px 10px;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+     
+    }
+    
+    .curhatanmu .button-text {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 20px;
+      position: relative;
+      flex: 0 0 auto;
+      margin-left: -7.5px;
+    }
+    
+    .curhatanmu .button-text-2 {
+      font-family: "Poppins-SemiBold", Helvetica;
+      position: relative;
+      width: fit-content;
+      margin-top: -1px;
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+      transition: transform 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    
+    .curhatanmu .button-text-2:hover {
+      font-weight: bold; 
+  }
+  
+    .curhatanmu .button-text-wrapper {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .curhatanmu .div-wrapper {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 20px;
+      position: relative;
+      flex: 0 0 auto;
+      margin-right: -7.5px;
+    }
+    
+    .curhatanmu .icon-profile-wrapper {
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 25px 0px;
+      position: relative;
+      top: 10px;
+      left: 636px;
+      
+    }
+  
+    .popup-content {
+      display: none;
+      position: absolute;
+      background-color: rgba(249, 249, 249, 0.893);
+      border: 1px solid #ddd;
+      padding: 20px;
+      z-index: 1;
+      top: 75px;
+      left: -40px;
+      width: 100px
+  }
+  
+  .popup-content a {
+    text-decoration: none; /* Menghapus garis bawah (underline) dari tautan */
+    color: #333; /* Mengatur warna teks tautan */
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  
+  .icon-profile-wrapper:hover .popup-content {
+    display: block;
+  }  
+  
+    .curhatanmu .icon-profile {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      transition: color 0.3s; 
+    }
+  
+    .curhatanmu .icon-profile:hover {
+      color: #0080ff;
+    }
+  
+    
+    .curhatanmu .p {
+      position: relative;
+      width: fit-content;
+      margin-top: -1px;
+      font-family: "Poppins-SemiBold", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 31px;
+      letter-spacing: 0;
+      line-height: normal;
+      text-align: center;
+      left:120px;
+    }
+    
+
+    .box {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+
+      }
+      
+      .box .background-biru {
+        position: absolute;
+        width: 100%;
+        height: 460px;
+        top: 0;
+        left: 0;
+        background: #d3e1fc;
+        filter: blur(100px)
+      }
+
+      .heading {
+        position: relative;
+        width: 100%;
+        height: 48px;
+      }
+      
+      .heading .text-wrapper {
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        font-family: "Poppins-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 68px;
+      }
+
+      .heading-1 {
+        position: relative;
+        width: 100%;
+        height: 48px;
+      }
+      
+      .heading-1 .text-wrapper-1 {
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        font-family: "Poppins-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 32px;
+      }
+
+      .dropdown-fix {
+        display: inline-block;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        position: relative;
+      }
+      
+      .dropdown-fix .frame {
+        display: flex;
+        width: 320px;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 24px;
+        position: relative;
+        flex: 0 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        border: 1px solid;
+        border-color: #000000;
+        top: 300px;
+        left: 100px;
+        cursor: pointer;
+        user-select: none;
+
+      }
+      
+      .dropdown-fix .pilih-topikmu {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        margin-right: 10px;
+        font-family: "Poppins-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #000000;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 315px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+        top: 350px;
+        left: 102px;
+      }
+  
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+  
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+
+      .dropdown-fix .u-angle-down {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+
+      .icon-mau-curhat {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: fixed;
+        left: 1250px;
+        top: 480px;
+      }
+      
+      .icon-mau-curhat .icon-mau-curhta {
+        position: relative;
+        width: 128px;
+        height: 128px;
+      }
+      
+      .icon-mau-curhat .mau-curhat {
+        display: flex;
+        width: 220px;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        position: relative;
+        background-color: #ffffff;
+        border-radius: 40px;
+        border: 4px solid;
+        border-color: #8da1d3;
+        cursor: pointer;
+      }
+      
+      .icon-mau-curhat .text-wrapper-5 {
+        position: relative;
+        width: fit-content;
+        font-family: "Poppins-Bold", Helvetica;
+        font-weight: 700;
+        color: #8da1d3;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .rectangle {
+        display: none;
+        width: 1080px;
+        height: 520px;
+        background-color: #fff;
+        border: 1px solid #000;
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .rectangle-1  {
+        position: relative;
+        width: 700px;
+        height: 320px;
+        padding: 20px;
+        left: 200px;
+        top: 50px;  
+
+    }
+    
+    
+    #placeholder {
+        color: #999; 
+        font-family: "Poppins-Bold", Helvetica;
+        padding: 10px 10px;
+    }
+    
+    #postText {
+        color: #000; 
+        font-family: "Poppins-Bold", Helvetica;
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+
+    .secondary-button-s { 
+        display: flex; 
+        width: 102.78px; 
+        height: 44.77px; 
+        align-items: flex-start; 
+        position: relative; 
+        top: 450px;
+        left:600px;
+        
+    }
+
+    .secondary-button-s .close-wrapper { 
+        display: inline-flex; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 12px 24px; 
+        position: relative; 
+        flex: 0 0 auto; 
+        border-radius: 4px; 
+        border: 2px solid; 
+        border-color: #8da1d3; 
+        box-shadow: 0px 4px 4px #00000040; 
+        box-sizing: border-box;
+        cursor: pointer;   
+    }
+
+
+    .primary-button-s { 
+        display: flex; 
+        width: 102.78px; 
+        height: 44.77px; 
+        align-items: flex-start; 
+        position: relative; 
+        top: 405px;
+        left:400px;
+    }
+
+    .primary-button-s .post-wrapper { 
+        display: inline-flex; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 12px 24px; 
+        position: relative; 
+        flex: 0 0 auto; 
+        border-radius: 4px; 
+        border: 2px solid; 
+        border-color: #8da1d3; 
+        box-shadow: 0px 4px 4px #00000040; 
+        box-sizing: border-box; 
+        cursor: pointer;
+    }
+
+    .posted-text-container {
+        /* Atur gaya sesuai kebutuhan */
+        width: 300px;
+        height: 150px;
+        border: 2px solid #ccc;
+        padding: 10px;
+        margin-top: 20px;
+        overflow-y: auto; /* Tambahkan overflow-y jika kontennya panjang */
+        
+    }
+    
+    .curhatanmu .footer {
+      position: absolute;
+      width: 100%;
+      height: 400px;
+      top: 4300px;
+      left: 0;
+      background-color: transparent;
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-right-style: none;
+      border-bottom-style: none;
+      border-left-style: none;
+      border-color: #000000;
+    }
+    
+    .curhatanmu .text-wrapper-2 {
+      position: absolute;
+      top: 95px;
+      left: 72px;
+      font-family: "Poppins-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 32px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    .curhatanmu .text-wrapper-2 a {
+      text-decoration: none; 
+      color: #000000; 
+      cursor: pointer; 
+      transition: color 0.2s;
+    }
+  
+    .curhatanmu .text-wrapper-2 a:hover {
+        color: #0080ff;
+    }
+  
+    .curhatanmu .text-wrapper-3 {
+      position: absolute;
+      top: 143px;
+      left: 72px;
+      font-family: "Poppins-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    
+    .curhatanmu .frame-7 {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 24px;
+      position: absolute;
+      top: 192px;
+      left: 72px;
+    }
+    
+    .curhatanmu .img-2 {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      transition: transform 0.2s;
+    }
+  
+    .curhatanmu .img-2:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      content: url("btn/facebook_button2.png")
+  }
+  
+    .curhatanmu .img-3 {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      transition: transform 0.2s;
+    }
+  
+    .curhatanmu .img-3:hover {
+      transform: scale(1.1); 
+      cursor: pointer;
+      content: url("btn/twitter_button3.png")
+  }
+  
+    .curhatanmu .img-4 {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      transition: transform 0.2s;
+    }
+  
+    .curhatanmu .img-4:hover {
+      transform: scale(1.1); 
+      cursor: pointer;
+      content: url("btn/instagram_button2.png")
+  }
+    
+    .curhatanmu .text-wrapper-4 {
+      position: absolute;
+      top: 95px;
+      left: 512px;
+      font-family: "Poppins-Medium", Helvetica;
+      font-weight: 500;
+      color: #000000;
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    .curhatanmu .frame-8 {
+      display: inline-flex;
+      flex-direction: column;
+      height: 160px;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 8px;
+      position: absolute;
+      top: 144px;
+      left: 512px;
+    }
+    
+    .curhatanmu .button-text-3 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex: 0 0 auto;
+    }
+  
+    .curhatanmu .button-text-3 a {
+      text-decoration: none;
+  }
+    
+    .curhatanmu .button-text-4 {
+      font-family: "Poppins-Medium", Helvetica;
+      font-weight: 500;
+      position: relative;
+      width: fit-content;
+      margin-top: -1px;
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+      cursor: pointer; 
+    }
+    
+  
+  @media (max-aspect-ratio: 16/10) {
+      /* CSS untuk layar dengan rasio lebar-tinggi 16:10 */
+      .curhatanmu {
+          /* Atur gaya CSS untuk layar 16:10 di sini */
+      }
+  }
+  @media (max-aspect-ratio: 16/9) {
+      /* CSS untuk layar dengan rasio lebar-tinggi 16:10 */
+      .curhatanmu {
+          /* Atur gaya CSS untuk layar 16:10 di sini */
+      }
+  }
+  
+  @media (max-width: 768px) {
+      /* CSS untuk layar berukuran kecil (contoh: ponsel) */
+      .curhatanmu {
+          /* Atur gaya CSS untuk layar kecil di sini */
+      }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+      /* CSS untuk layar berukuran menengah (contoh: tablet) */
+      .curhatanmu {
+          /* Atur gaya CSS untuk layar menengah di sini */
+      }
+  }
