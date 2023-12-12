@@ -527,6 +527,7 @@
   flex: 0 0 auto;
   left: 15px;
   top: 35px;
+  cursor: pointer;
 }
 
 .pop-up-login-spotify .text-wrapper-spotify {
@@ -571,6 +572,13 @@
   font-weight: 500;
   color: #9b9b9b;
   left: 5px;   
+  position: inherit;
+}
+
+.pop-up-login-spotify .a {
+  font-weight: 500;
+  color: #9b9b9b;
+  left: 5px;  
   position: inherit;
 }
 

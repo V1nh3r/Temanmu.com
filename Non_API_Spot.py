@@ -36,3 +36,6 @@ pyautogui.press('enter')
 
 # Optional: Add a delay before closing the script
 time.sleep(5)
+
+    
+
