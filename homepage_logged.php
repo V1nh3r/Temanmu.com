@@ -19,7 +19,8 @@
                   <div class="button-text-wrapper">
                     <a href="topik_logged.php" class="button-text-2">Topik</a>
                   </div>
-                  <div class="button-text-wrapper"><div class="button-text-2">Curhatanmu</div></div>
+                  <div class="button-text-wrapper">
+                  <a href="curhatanmu.html" class="button-text-2">Curhatanmu</a></div>
                   <div class="button-text-wrapper">
                     <a href="tentang-kami_logged.php" class="button-text-2">Tentang kami</a>
                   </div>

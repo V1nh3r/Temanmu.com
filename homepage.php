@@ -1,3 +1,20 @@
+<?php
+require_once 'db_connection.php';
+
+// Check if the button has been pressed
+if(isset($_POST['run_script'])) {
+    // Replace 'python' with the full path to the Python executable if it's not in the PATH
+    $pythonExecutable = 'C:\Users\user\AppData\Local\Programs\Python\Python310\python.exe';
+    $pythonScript = 'D:\\Xammp\\htdocs\\Temanmu.com-main\\API_Spot.py';
+    exec("\"{$pythonExecutable}\" \"{$pythonScript}\"", $output, $return_var);
+    // Handle the output if needed
+    header('Content-Type: application/json');
+    echo json_encode($output);
+    exit;
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -84,14 +101,16 @@
                   <p class="millions-of-songs">Millions of songs,<br />Free on Spotify</p>
                   <div class="frame-spotify">
                     <div class="div">
-                      <div class="text-wrapper-spotify">Log In</div>
+                      <div class="text-wrapper-spotify" id="runPythonScriptButton">Log In</div>
                       <img class="group-spotify" src="btn/vector.svg" />
                     </div>
                   </div>
+                  
+
                   <p class="new-to-spotify-sign">
                     <span class="span">New to Spotify?</span>
                     <span class="text-wrapper-2-spotify">&nbsp;</span>
-                    <span class="text-wrapper-3-spotify">Sign up for free</span>
+                    <a href="https://www.spotify.com/signup/" class="text-wrapper-3-spotify">Sign up for free</a>
                   </p>
                 </div>
               </div>
@@ -179,5 +198,54 @@
         popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'block' : 'none';
       }
     </script>
+    <script>
+      $(document).ready(function(){
+        $("#loginButton").click(function(){
+          // Menjalankan skrip Python menggunakan Ajax
+          $.ajax({
+            type: "GET",
+            url: "Non_API_Spot.py",
+            success: function(response){
+              console.log("Skrip Python dijalankan: " + response);
+            },
+            error: function(error){
+              console.log("Error: " + error);
+            }
+          });
+        });
+      });
+      </script>
+      <script>
+      document.getElementById('loginButton').addEventListener('click', function() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "path_to_your_php_script.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            // Handle response
+            console.log(JSON.parse(xhr.responseText));
+        }
+    }
+    xhr.send("run_script=true");
+});
+</script>
+<script>
+    function runPythonScript() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "homepage.php", true); // POST request to the same PHP file
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+            if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                // Handle response here, for example, log it or display it on the page
+                console.log(JSON.parse(xhr.responseText));
+            }
+        }
+        xhr.send("run_script=true");
+    }
+
+    // Assuming you've updated your button's id to be unique, e.g., "runPythonScriptButton"
+    document.getElementById('runPythonScriptButton').addEventListener('click', runPythonScript);
+</script>
+      
   </body>
 </html>
