@@ -84,7 +84,7 @@
                   <p class="millions-of-songs">Millions of songs,<br />Free on Spotify</p>
                   <div class="frame-spotify">
                     <div class="div">
-                      <div class="text-wrapper-spotify" id="loginButton">Log In</div>
+                      <div class="text-wrapper-spotify">Log In</div>
                       <img class="group-spotify" src="btn/vector.svg" />
                     </div>
                   </div>
@@ -179,23 +179,5 @@
         popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'block' : 'none';
       }
     </script>
-    <script>
-      $(document).ready(function(){
-        $("#loginButton").click(function(){
-          // Menjalankan skrip Python menggunakan Ajax
-          $.ajax({
-            type: "GET",
-            url: "Non_API_Spot.py",
-            success: function(response){
-              console.log("Skrip Python dijalankan: " + response);
-            },
-            error: function(error){
-              console.log("Error: " + error);
-            }
-          });
-        });
-      });
-      </script>
-      
   </body>
 </html>
