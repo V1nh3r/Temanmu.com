@@ -490,6 +490,7 @@
   width: 137px;
   height: 40px;
   top: -40px;
+  left: 20px;
 }
 
 .pop-up-login-spotify .millions-of-songs {
@@ -502,15 +503,16 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
-  left: -100px;
+  left: -130px;
 }
 
 .pop-up-login-spotify .frame-spotify {
-  display: inline-flex;
+    display: inline-flex;
   align-items: center;
   gap: 12px;
   position: relative;
   flex: 0 0 auto;
+  left: 20px;
   
 }
 
