@@ -4,8 +4,8 @@ require_once 'db_connection.php';
 // Check if the button has been pressed
 if(isset($_POST['run_script'])) {
     // Replace 'python' with the full path to the Python executable if it's not in the PATH
-    $pythonExecutable = 'C:\Users\user\AppData\Local\Programs\Python\Python310\python.exe';
-    $pythonScript = 'D:\\Xammp\\htdocs\\Temanmu.com-main\\API_Spot.py';
+    $pythonExecutable = 'C:\Users\VINCENT H\AppData\Local\Microsoft\WindowsApps\python.exe';
+    $pythonScript = 'D:\Kuliah\Matkul s7\PERANCANGAN & PEMROGRAMAN WEB\UAS\Temanmu.com\Non_API_Spot.py';
     exec("\"{$pythonExecutable}\" \"{$pythonScript}\"", $output, $return_var);
     // Handle the output if needed
     header('Content-Type: application/json');
