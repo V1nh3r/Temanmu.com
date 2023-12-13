@@ -88,7 +88,7 @@
           <div class="frame-4">
             <div class="element"><a href="homepage.php" class="text-wrapper-3">Beranda</a></div>
             <div class="element-2"><a href="topik.php" class="text-wrapper-4">Topik</a></div>
-            <div class="element-3"><div class="text-wrapper-4">Curhatanmu</div></div>
+            <div class="element-3"><a href="login.php" class="text-wrapper-4">Curhatanmu</a></div>
             <div class="button-text-wrapper"><div class="button-text">Tentang Kami</div></div>
             <div class="element-4"><div class="text-wrapper-4">Testimoni</div></div>
             <div class="icon-profile-wrapper">
